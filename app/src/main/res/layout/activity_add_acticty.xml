@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".AddActivity"
+    android:id="@+id/add_layout">
+
+    <EditText
+        android:id="@+id/add_title_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:hint="عنوان کتاب"
+        android:imeOptions="actionNext"
+        android:backgroundTint="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/add_author_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="15dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/black"
+        android:imeOptions="actionNext"
+        android:hint="نویسنده" />
+
+    <EditText
+        android:id="@+id/add_pages_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="15dp"
+        android:textColorHint="@color/gray"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:hint="تعداد صفحات" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="25dp"
+        android:text="ذخیره"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
